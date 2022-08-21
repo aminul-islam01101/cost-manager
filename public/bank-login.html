@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"
+      defer
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/d025376340.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body class="flex min-h-screen items-center justify-center text-center">
+    <section class="min-h-50vh w-full  bg-sky-400">
+      <div class="container space-y-10">
+        <h1 class="pt-10 text-7xl">
+          Welcome to my <span class="font-bold">expense Calculator</span>
+        </h1>
+        <form action="" class="mx-auto w-70">
+          <h3 for="" class="text-white mb-5 text-4xl font-semibold ">Please Login</h3>
+          <div
+            class="form-group flex  flex-col items-start  space-y-7 text-xl"
+          >
+            <input type="email" placeholder="enter email" class="w-full p-2 rounded"/>
+            <input type="password" placeholder="enter password"class="w-full p-2 rounded  " />
+            <input
+              type="button"
+              value="submit"
+              class="btn bg-red-500 text-white px-7 py-3 disabled:bg-slate-700"
+            />
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <script src="./../js/bank-login.js"></script>
+    <script src="./../js/deposit.js"></script>
+    <script src="./../js/utilities.js"></script>
+  </body>
+</html>

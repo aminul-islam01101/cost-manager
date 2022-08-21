@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"
+      defer
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/d025376340.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <link rel="stylesheet" href="./public/style.css" />
+  </head>
+
+  <body class="">
+    <section class="min-h-screen w-full">
+      <div class="container space-y-10">
+        <h1
+          class="pt-10 text-center text-7xl font-bold capitalize text-sky-500"
+        >
+          cost manager
+        </h1>
+
+        <section class="income grid grid-cols-2 items-center gap-10">
+          <!-- left image -->
+          <figure>
+            <img src="./public/images/income.png" alt="" class="w-full" />
+          </figure>
+
+          <div>
+            <!-- ul -->
+            <ul
+              class="nav nav-tabs mb-4 flex list-none flex-col flex-wrap border-b-0 pl-0 md:flex-row"
+              id="tabs-tabFill"
+              role="tablist"
+            >
+              <li class="nav-item flex-auto text-center" role="presentation">
+                <a
+                  href="#tabs-homeFill"
+                  class="nav-link active my-2 block w-full border-x-0 border-t-0 border-b-2 border-transparent px-6 py-3 text-xs font-medium uppercase leading-tight hover:border-transparent hover:bg-gray-100 focus:border-transparent"
+                  id="tabs-home-tabFill"
+                  data-bs-toggle="pill"
+                  data-bs-target="#tabs-homeFill"
+                  role="tab"
+                  aria-controls="tabs-homeFill"
+                  aria-selected="true"
+                  >Income</a
+                >
+              </li>
+              <li class="nav-item flex-auto text-center" role="presentation">
+                <a
+                  href="#tabs-profileFill"
+                  class="nav-link my-2 block w-full border-x-0 border-t-0 border-b-2 border-transparent px-6 py-3 text-xs font-medium uppercase leading-tight hover:border-transparent hover:bg-gray-100 focus:border-transparent"
+                  id="tabs-profile-tabFill"
+                  data-bs-toggle="pill"
+                  data-bs-target="#tabs-profileFill"
+                  role="tab"
+                  aria-controls="tabs-profileFill"
+                  aria-selected="false"
+                  >Expense</a
+                >
+              </li>
+              <li class="nav-item flex-auto text-center" role="presentation">
+                <a
+                  href="#tabs-messagesFill"
+                  class="nav-link my-2 block w-full border-x-0 border-t-0 border-b-2 border-transparent px-6 py-3 text-xs font-medium uppercase leading-tight hover:border-transparent hover:bg-gray-100 focus:border-transparent"
+                  id="tabs-messages-tabFill"
+                  data-bs-toggle="pill"
+                  data-bs-target="#tabs-messagesFill"
+                  role="tab"
+                  aria-controls="tabs-messagesFill"
+                  aria-selected="false"
+                  >Balance</a
+                >
+              </li>
+            </ul>
+            <!-- tab-1 -->
+            <div class="tab-content" id="tabs-tabContentFill">
+              <div
+                class="tab-pane fade show active"
+                id="tabs-homeFill"
+                role="tabpanel"
+                aria-labelledby="tabs-home-tabFill"
+              >
+                <div
+                  class="income-details space-y-6 bg-slate-100 p-10 text-lg shadow-2xl"
+                >
+                  <h2 class="text-center text-5xl font-semibold">Income</h2>
+                  <form
+                    action=""
+                    class="income-form flex items-center justify-around border p-3 shadow-lg"
+                  >
+                    <label for="" class="mr-3 text-2xl">Remote Job :</label>
+                    <input
+                      value="0"
+                      type="text"
+                      class="rounded-xl bg-slate-300 p-2 text-slate-600"
+                    />
+                  </form>
+                  <form
+                    action=""
+                    class="income-form flex items-center justify-around border p-3 shadow-lg"
+                  >
+                    <label for="" class="mr-3 text-2xl"> Freelancing :</label>
+                    <input
+                      value="0"
+                      type="text"
+                      class="rounded-xl bg-slate-300 p-2 text-slate-600"
+                    />
+                  </form>
+                  <form
+                    action=""
+                    class="income-form flex items-center justify-around border p-3 shadow-lg"
+                  >
+                    <label for="" class="mr-3 text-2xl"> Business :</label>
+                    <input
+                      value="0"
+                      type="text"
+                      class="rounded-xl bg-slate-300 p-2 text-slate-600"
+                    />
+                  </form>
+                  <form
+                    action=""
+                    class="income-form flex items-center justify-around border p-3 shadow-lg"
+                  >
+                    <label for="" class="mr-3 text-2xl"> Others :</label>
+                    <input
+                      value="0"
+                      type="text"
+                      class="rounded-xl bg-slate-300 p-2 text-slate-600"
+                    />
+                  </form>
+                  <form
+                    action=""
+                    class="income-form flex items-center justify-around border p-3 shadow-lg"
+                  >
+                    <label for="" class="mr-3 text-2xl"> Total:</label>
+                    <span
+                      type="text"
+                      class="inline-block w-9/12 rounded-xl bg-slate-600 p-2 px-5 text-white"
+                      >0</span
+                    >
+                  </form>
+                  <button
+                    onclick="myFunction()"
+                    class="btn my-20 inline-block bg-teal-700 px-10 py-5 text-left text-2xl text-slate-200"
+                    id="income-deposit"
+                  >
+                    deposit money
+                  </button>
+                  <button
+                    class="btn income-deposit my-20 inline-block bg-teal-700 px-10 py-5 text-left text-2xl text-slate-200"
+                    id="income-total-btn"
+                  >
+                    Get Total
+                  </button>
+                </div>
+              </div>
+              <!-- tab-2 -->
+              <div
+                class="tab-pane fade"
+                id="tabs-profileFill"
+                role="tabpanel"
+                aria-labelledby="tabs-profile-tabFill"
+              >
+                <div
+                  class="expense-details space-y-6 bg-slate-100 p-10 text-lg shadow-2xl"
+                >
+                  <h2 class="text-center text-5xl font-semibold">Expense</h2>
+                  <form
+                    action=""
+                    class="income-form flex items-center justify-around border p-3 shadow-lg"
+                  >
+                    <label for="" class="mr-3 text-2xl">House Rent :</label>
+                    <input
+                      value="0"
+                      type="text"
+                      class="rounded-xl bg-slate-300 p-2 text-slate-600"
+                    />
+                  </form>
+                  <form
+                    action=""
+                    class="income-form flex items-center justify-around border p-3 shadow-lg"
+                  >
+                    <label for="" class="mr-3 text-2xl"> Education :</label>
+                    <input
+                      value="0"
+                      type="text"
+                      class="rounded-xl bg-slate-300 p-2 text-slate-600"
+                    />
+                  </form>
+                  <form
+                    action=""
+                    class="income-form flex items-center justify-around border p-3 shadow-lg"
+                  >
+                    <label for="" class="mr-3 text-2xl"> Utility :</label>
+                    <input
+                      value="0"
+                      type="text"
+                      class="rounded-xl bg-slate-300 p-2 text-slate-600"
+                    />
+                  </form>
+                  <form
+                    action=""
+                    class="income-form flex items-center justify-around border p-3 shadow-lg"
+                  >
+                    <label for="" class="mr-3 text-2xl"> Others :</label>
+                    <input
+                      value="0"
+                      type="text"
+                      class="rounded-xl bg-slate-300 p-2 text-slate-600"
+                    />
+                  </form>
+                  <form
+                    action=""
+                    class="income-form flex items-center justify-around border p-3 shadow-lg"
+                  >
+                    <label for="" class="mr-3 text-2xl"> Total:</label>
+                    <span
+                      type="text"
+                      class="inline-block w-9/12 rounded-xl bg-slate-600 p-2 px-5 text-white"
+                      >0</span
+                    >
+                  </form>
+                  <button
+                    onclick="myFunction()"
+                    class="btn income-deposit my-20 inline-block bg-teal-700 px-10 py-5 text-left text-2xl text-slate-200"
+                    id=""
+                  >
+                    Withdraw money
+                  </button>
+                  <button
+                    class="btn my-20 inline-block bg-teal-700 px-10 py-5 text-left text-2xl text-slate-200"
+                    id="expense-total-btn"
+                  >
+                    Get Total
+                  </button>
+                </div>
+              </div>
+              <!-- tab-3 -->
+              <div
+                class="tab-pane fade"
+                id="tabs-messagesFill"
+                role="tabpanel"
+                aria-labelledby="tabs-profile-tabFill"
+              >
+                <div
+                  class="balance-details space-y-6 bg-slate-100 p-10 text-lg shadow-2xl"
+                >
+                  <h2 class="text-center text-5xl font-semibold">Expense</h2>
+                  <form
+                    action=""
+                    class="income-form flex items-center justify-around border p-3 shadow-lg"
+                  >
+                    <label for="" class="mr-3 text-2xl"> Income:</label>
+                    <span
+                      type="text"
+                      class="inline-block w-9/12 rounded-xl bg-slate-600 p-2 px-5 text-white"
+                      >0</span
+                    >
+                  </form>
+                  <form
+                    action=""
+                    class="income-form flex items-center justify-around border p-3 shadow-lg"
+                  >
+                    <label for="" class="mr-3 text-2xl"> Expense:</label>
+                    <span
+                      type="text"
+                      class="inline-block w-9/12 rounded-xl bg-slate-600 p-2 px-5 text-white"
+                      >0</span
+                    >
+                  </form>
+                  <form
+                    action=""
+                    class="income-form flex items-center justify-around border p-3 shadow-lg"
+                  >
+                    <label for="" class="mr-3 text-2xl"> Savings:</label>
+                    <span
+                      type="text"
+                      class="inline-block w-9/12 rounded-xl bg-slate-600 p-2 px-5 text-white"
+                      >0</span
+                    >
+                  </form>
+
+                  <form
+                    action=""
+                    class="income-form flex items-center justify-around border p-3 shadow-lg"
+                  >
+                    <label for="" class="mr-3 text-2xl"> Balance:</label>
+                    <span
+                      type="text"
+                      class="inline-block w-9/12 rounded-xl bg-slate-600 p-2 px-5 text-white"
+                      >0</span
+                    >
+                  </form>
+                  <p class="mt-10 text-2xl" id="comments"></p>
+
+                  <a href="" id="check-balance">
+                    <button
+                      class="btn bg-teal-700 px-10 py-5 text-left text-2xl text-slate-200"
+                    >
+                      check balance
+                    </button></a
+                  >
+
+                  <a href="#slide" class="hidden" id="shopping"
+                    ><button
+                      class="btn inline-block bg-teal-700 px-10 py-5 text-left text-2xl text-slate-200"
+                      id="shopping"
+                    >
+                      Lets do some Shopping Now 👇
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div></div>
+      </div>
+    </section>
+
+    <script>
+      const incomeTotal = document.querySelector('.income span');
+
+      function myFunction() {
+        if (incomeTotal.innerText === '0') {
+          alert('Please enter amount first');
+        } else {
+          window.open('http://127.0.0.1:5500/public/bank-login.html').focus();
+        }
+      }
+    </script>
+
+    <script src="./js/index.js" type="module"></script>
+    <!-- <script src="./js/income-calculation.js" type="module"></script> -->
+    <!-- <script src="./js/deposit.js" type="module"></script> -->
+  </body>
+</html>

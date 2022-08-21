@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"
+      defer
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/d025376340.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body class="flex min-h-screen items-center justify-center text-center">
+    <section class="min-h-50vh w-full bg-sky-400">
+      <main class="container">
+        <section class="display mt-10 grid grid-cols-3 gap-10">
+          <!-- Deposit Amount -->
+          <div
+            class="deposit-display rounded-lg bg-green-400 p-16 text-white shadow-xl"
+          >
+            <h1 class="mb-4 text-4xl">Deposit Amount</h1>
+            <h2 class="text-7xl">$ <span id="deposit-amount">1200</span></h2>
+          </div>
+
+          <!-- Withdraw Amount -->
+          <div
+            class="deposit-display rounded-lg bg-rose-400 p-16 text-slate-700 shadow-xl"
+          >
+            <h1 class="mb-4 text-4xl">Withdraw Amount</h1>
+
+            <h2 class="text-7xl">$ <span id="withdraw-amount">00</span></h2>
+          </div>
+
+          <!-- Nit Balance -->
+          <div
+            class="deposit-display rounded-lg bg-yellow-300 p-16 text-stone-900 shadow-xl"
+          >
+            <h1 class="mb-4 text-4xl">Nit Balance</h1>
+
+            <h2 class="text-7xl">$ <span id="nit-amount">1200</span></h2>
+          </div>
+        </section>
+
+        <!-- Deposit input -->
+        <section class="display my-10 grid grid-cols-2 gap-10">
+          <div
+            class="deposit-display rounded-lg bg-teal-400 p-16 text-white shadow-xl"
+          >
+            <form action="" class="mx-auto w-90">
+              <h3 for="" class="mb-5 text-4xl font-semibold text-slate-700">
+                Deposit amount
+              </h3>
+
+              <div
+                class="form-group flex flex-col items-start space-y-7 text-xl"
+              >
+                <!-- input box -->
+                <input
+                  id="deposit-input"
+                  type="text"
+                  placeholder="Deposit amount"
+                  class="w-full rounded p-2 text-slate-700"
+                />
+                <!-- input button -->
+                <input
+                  id="deposit-btn"
+                  type="button"
+                  value="submit"
+                  class="btn bg-slate-700 px-7 py-3 text-white"
+                />
+              </div>
+            </form>
+          </div>
+
+          <!-- Withdraw input -->
+          <div
+            class="deposit-display rounded-lg bg-cyan-500 p-16 text-slate-700 shadow-xl"
+          >
+            <form action="" class="mx-auto w-90">
+              <h3 for="" class="mb-5 text-4xl font-semibold text-slate-700">
+                Withdraw amount
+              </h3>
+              <div
+                class="form-group flex flex-col items-start space-y-7 text-xl"
+              >
+                <!-- input box -->
+                <input
+                  id="withdraw-input"
+                  type="text"
+                  placeholder="Deposit amount"
+                  class="w-full rounded p-2"
+                />
+                <!-- input button -->
+                <input
+                  id="withdraw-btn"
+                  type="button"
+                  value="submit"
+                  class="btn bg-slate-700 px-7 py-3 text-white"
+                />
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+    </section>
+
+    <script src="../js/withdraw.js" type="module"></script>
+    <script src="../js/deposit.js" type="module"></script>
+  </body>
+</html>
